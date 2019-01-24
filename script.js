@@ -312,7 +312,7 @@ canvas.addEventListener('mousemove', function(event) {
   if(mouseDown) {
 
     //r needs to enclose points on canvas, or cosAng will be > 1 => BAD
-    //ERROR: for some reason when cosAng = 1, the system breaks
+    //ERROR: for some reason when cosAng = 1, the system breaks, added check below
 
     var curX = event.clientX-canvas.offsetLeft-canvas.width/2,
         curY = -(event.clientY-canvas.offsetTop-canvas.height/2);

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bloch Sphere: Single Qubit</title>
+    <link rel="stylesheet" href="./style.css"/>
+  </head>
+  <body>
+    <canvas id="bloch"></canvas>
+    <center id="ui">
+
+      <h2>Superposition</h2>
+      <p>
+<input class="setting" id="a" type="text"/>  |0>      +      <input class="setting" id="b" type="text"/>  |1>
+
+(| a |<sup>2</sup> + | b |<sup>2</sup> = 1)
+
+<h3 id="prb"></h3>
+      </p>
+      <button class="update" onclick="fromSuperposition(); display();">Calculate</button>
+      <br><br><br><br>
+
+      <h2>Polar</h2>
+      <p>
+&theta;  =  <input class="setting" id="theta" type="text"/> &pi;
+        <br>
+&phi;  =  <input class="setting" id="phi" type="text"/> &pi;
+
+(values from 0->2&pi;)
+      </p>
+      <button class="update" onclick="fromPolar(); display();">Calculate</button>
+      <br><br><br><br>
+
+      <h2>Vector</h2>
+      <p>
+|‾ <input class="setting" id="x" type="text"/> ‾|
+|   <input class="setting" id="y" type="text"/>   |
+|_ <input class="setting" id="z" type="text"/> _|
+
+(must have magnitude 1)
+      </p>
+      <button class="update" onclick="fromVector(); display();">Calculate</button>
+      <br><br><br><br>
+
+    </center>
+
+    <center id="links">
+      <p>
+Links:
+<a href="https://en.wikipedia.org/wiki/Qubit#Qubit_states">What is a qubit?</a>
+<a href="https://en.wikipedia.org/wiki/Bloch_sphere">Bloch Sphere</a>
+<a href="https://www.research.ibm.com/ibm-q/">IBM Q</a>
+<a href="https://docs.microsoft.com/en-us/quantum/?view=qsharp-preview">Microsoft Q#</a>
+      </p>
+    </center>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

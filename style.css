@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+}
+p {
+  white-space: pre;
+}
+.setting {
+  padding: 3px;
+  width: auto;
+}
+#bloch {
+  width: 50vw;
+  height: 50vw;
+  position: absolute;
+  top: 5vh;
+  left: 25vw;
+  background-color: black;
+  cursor: pointer;
+}
+#links {
+  position: fixed;
+  left: 5vh;
+  bottom: 5vh;
+}
+#ui {
+  box-sizing: border-box;
+  width: 100%;
+  position: absolute;
+  top: calc(50vw + 5vh);
+  padding: 5vh;
+}
